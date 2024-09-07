@@ -10,4 +10,17 @@ function tallestHeight(heights) {
   return tallest;
 }
 
+// function for shortest height
+
+function shortestHeight(heights) {
+  let shortest = heights[0];
+  for (const height of heights) {
+    if (height < shortest) {
+      shortest = height;
+    }
+  }
+  return shortest;
+}
+
 console.log(tallestHeight(heights));
+console.log(shortestHeight(heights));
